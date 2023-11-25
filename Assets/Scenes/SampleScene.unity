@@ -184,7 +184,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.1995697
+  orthographic size: 2.2055674
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: -17.9, z: -10}
+  m_LocalPosition: {x: 0.55, y: -17.37, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 1082218785}
   - component: {fileID: 1082218787}
   - component: {fileID: 1082218788}
+  - component: {fileID: 1082218789}
   m_Layer: 0
   m_Name: thief-car
   m_TagString: Untagged
@@ -373,7 +374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 21f51b15058ebf643887204f9fb893e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -394,8 +395,8 @@ Transform:
   m_GameObject: {fileID: 1082218784}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7054628, w: 0.7087469}
-  m_LocalPosition: {x: 2.0396, y: -18.6365, z: 0}
-  m_LocalScale: {x: 0.30304304, y: 0.34746876, z: 1}
+  m_LocalPosition: {x: 0.7, y: -18, z: 0}
+  m_LocalScale: {x: 0.22079717, y: 0.23311679, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -415,8 +416,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 011bc2400e15e4747ae5775220d7d47b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -436,7 +437,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1082218784}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 011bc2400e15e4747ae5775220d7d47b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -535,6 +536,20 @@ PolygonCollider2D:
       - {x: 0.9, y: -1.17}
       - {x: 1.51, y: -1.18}
   m_UseDelaunayMesh: 0
+--- !u!114 &1082218789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082218784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d14a47dc2d7b604eb959726ea5d9198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 210
+  rotationSpeed: 100
 --- !u!1 &1420984426
 GameObject:
   m_ObjectHideFlags: 0
